@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="JERoadGroupTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtT-lx-eaz">
+                        <rect key="frame" x="46" y="21" width="57" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="46" y="4" width="57" height="31"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3K-eR-0rH">
+                        <rect key="frame" x="117" y="21" width="108" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="117" y="6" width="46" height="23"/>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="head1.png" translatesAutoresizingMaskIntoConstraints="NO" id="YB0-yg-96M">
+                        <rect key="frame" x="8" y="25" width="30" height="24"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="8" y="7" width="30" height="24"/>
+                        </variation>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOu-8s-7BQ">
+                        <rect key="frame" x="233" y="21" width="88" height="30"/>
+                        <state key="normal" title="查看更多》">
+                            <color key="titleColor" red="1" green="0.87058823529999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="164" y="3" width="88" height="30"/>
+                        </variation>
+                        <connections>
+                            <action selector="lookMoreMessage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BWk-S4-SHz"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.13725490200000001" green="0.38431372549999998" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lookMore" destination="JOu-8s-7BQ" id="0Ln-xW-Qeh"/>
+                <outlet property="message" destination="q3K-eR-0rH" id="TTz-zv-u1R"/>
+                <outlet property="tittle" destination="wtT-lx-eaz" id="10t-k9-f8r"/>
+            </connections>
+            <point key="canvasLocation" x="271" y="576.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="head1.png" width="100" height="100"/>
+    </resources>
+</document>
